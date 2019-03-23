@@ -1,10 +1,12 @@
-----------------------------DELETE
+#----------------------------DELETE
+
 curl -X DELETE \
   http://localhost:8080/order/1 \
   -H 'cache-control: no-cache' \
   -H 'postman-token: fa9776ac-87ae-517f-beae-10dbfeb1886a'
 
--------------------------POST
+#-------------------------POST
+
 curl -X POST \
   http://localhost:8080/order/ \
   -H 'cache-control: no-cache' \
@@ -56,14 +58,16 @@ curl -X POST \
 }'
 
 
-------------------------GET
+#------------------------GET
+
 curl -X GET \
   http://localhost:8080/order/findByid/23 \
   -H 'cache-control: no-cache' \
   -H 'postman-token: 4745cd38-9546-1cc0-8369-a763c7e675b3'
   
   
---------------------PUT
+#--------------------PUT
+
 curl -X PUT \
   http://localhost:8080/order/1 \
   -H 'cache-control: no-cache' \
